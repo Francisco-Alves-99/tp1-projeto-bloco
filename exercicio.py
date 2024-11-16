@@ -44,6 +44,10 @@ def adicionar_tarefa(tarefas):
         print('---------------------')
         print('Erro: id da tarefa já existe')
         return
+    elif (id < 1):
+        print('---------------------')
+        print('Erro: Digite um id válido!')
+        return
     descricao = input('Digite a descricao da tarefa: ')
     status = input('Digite o status da tarefa: ')
 
